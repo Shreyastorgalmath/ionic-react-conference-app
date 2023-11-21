@@ -81,7 +81,7 @@ const Menu: React.FC<MenuProps> = ({ darkMode, history, isAuthenticated, setDark
         <IonList lines="none">
           <IonListHeader>Tutorial</IonListHeader>
           <IonItem button onClick={() => {
-            history.push('/tutorial');
+            history.push('/mortgage');
           }}>
             <IonIcon slot="start" icon={hammer} />
             Show Tutorial

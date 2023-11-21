@@ -36,6 +36,7 @@ import Tutorial from './pages/Tutorial';
 import HomeOrTutorial from './components/HomeOrTutorial';
 import { Schedule } from "./models/Schedule";
 import RedirectToLogin from './components/RedirectToLogin';
+import zoho from './pages/zoho';
 
 setupIonicReact();
 
@@ -87,7 +88,8 @@ const IonicApp: React.FC<IonicAppProps> = ({ darkMode, schedule, setIsLoggedIn, 
                 <Route path="/login" component={Login} />
                 <Route path="/signup" component={Signup} />
                 <Route path="/support" component={Support} />
-                <Route path="/tutorial" component={Tutorial} />
+                <Route path="/mortgage" component={Tutorial} />
+                <Route path="/zoho" component={zoho} />
                 <Route path="/logout" render={() => {
                   return <RedirectToLogin
                     setIsLoggedIn={setIsLoggedIn}

@@ -13,10 +13,9 @@
   }
 
   .slide-image {
-    max-height: 50%;
-    max-width: 60%;
-    margin: 36px 0;
-    pointer-events: none;
+    max-height: 100%;
+    max-width: 100%;
+
   }
 
   b {
@@ -35,3 +34,34 @@
   }
 
 }
+/* Initially hide all images */
+#image1, #image2, #image3, #image4 {
+	display: none;
+  }
+  
+  /* Show image1 for small screens */
+  @media (max-width: 576px) {
+	#image1 {
+	  display: block;
+	}
+  }
+  
+  /* Show image2 for medium screens */
+  @media (min-width: 576px) and (max-width: 768px) {
+	#image2 {
+	  display: block;
+	}
+  }
+  
+  /* Show image3 for large screens */
+  @media (min-width: 768px) and (max-width: 1025px){
+	#image3 {
+	  display: block;
+	}
+}
+	@media (min-width: 1025px) {
+		#image4 {
+		  display: block;
+		}
+  }
+  

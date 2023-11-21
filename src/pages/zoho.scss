@@ -1,0 +1,67 @@
+#tutorial-page {
+    ion-toolbar {
+      --background: transparent;
+      --border-color: transparent;
+    }
+  
+    .swiper-slide {
+      display: block;
+    }
+  
+    .slide-title {
+      margin-top: 2.8rem;
+    }
+  
+    .slide-image {
+      max-height: 100%;
+      max-width: 100%;
+  
+    }
+  
+    b {
+      font-weight: 500;
+    }
+  
+    p {
+      padding: 0 40px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--ion-color-step-600, #60646b);
+  
+      b {
+        color: var(--ion-text-color, #000000);
+      }
+    }
+  
+  }
+  /* Initially hide all images */
+  #image1, #image2, #image3, #image4 {
+      display: none;
+    }
+    
+    /* Show image1 for small screens */
+    @media (max-width: 576px) {
+      #image1 {
+        display: block;
+      }
+    }
+    
+    /* Show image2 for medium screens */
+    @media (min-width: 576px) and (max-width: 768px) {
+      #image2 {
+        display: block;
+      }
+    }
+    
+    /* Show image3 for large screens */
+    @media (min-width: 768px) and (max-width: 1025px){
+      #image3 {
+        display: block;
+      }
+  }
+      @media (min-width: 1025px) {
+          #image4 {
+            display: block;
+          }
+    }
+    
